@@ -1,0 +1,367 @@
+.handshake{
+    background-image: url('../images/background/handshake.png') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav{
+        &.bg-light{
+            background: #121212 !important;
+        }
+
+        .nav-item{
+            a{
+                &.active{
+                    background: transparent !important;
+                    line-height: 35px;
+                    &:hover{
+                        background: #FFFFFF !important;
+                    }
+                }
+                font-family: $Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF !important;
+
+                img{
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .dropdown-menu{
+            background: rgba(41, 41, 41, 1);
+            a{
+                &:hover{
+                    color: black !important;
+                }
+                font-family: $Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em; 
+                color: #FFFFFF !important;   
+
+            }
+            .dropdown-item{
+                img{
+                    margin-right: 5px;
+                }
+            }
+        }
+    
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            display: none;
+            color: linear-gradient(125.9deg, #9C7545 -10.63%, #FCC984 78.03%, #FCC984 132.41%) !important;
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+        }
+
+        .main-nav-ul{
+            .main-nav-li{
+                display: block;
+                @media screen and (min-width: 992px){
+                    width: 110px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                @media screen and (min-width: 1200px){
+                    width: 130px;
+                }
+
+                @media screen and (min-width: 1400px){
+                    width: 170px;
+                }
+
+                &.top-links{
+                    display: block;
+                    @media screen and (min-width: 992px){
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .nav-btn{
+            background: linear-gradient(180deg, #9E7646 0%, #9C7545 48.44%, #9C7545 100%);
+            border: none;
+            padding: 10px 25px;
+
+            font-family: $Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+        }
+    }
+
+    .hero-content{
+        padding: 4rem 0;
+        @media screen and (max-width: 767px){
+            padding: 1rem 0;
+        }
+        .left-side{
+           
+            text-align: center;
+
+            @media screen and (max-width: 767px){
+                text-align: center;
+            }
+
+            display: flex;
+            justify-content: center;
+            
+            h1{
+                @include fluid-type($min_width, $max_width, 32px, 80px);
+                font-weight: 400;
+                line-height: 62px;
+                letter-spacing: 0px;
+                padding-top: 3rem;
+
+
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 80px;
+                line-height: 62px;
+                /* identical to box height, or 77% */
+                
+                text-align: center;
+                
+                color: #FFFFFF;
+                @media screen and (max-width: 767px){
+                    padding-bottom: 1rem;
+                }
+
+               
+            }
+
+            p{
+                @include fluid-type($min_width, $max_width, 12px, 16px);
+                
+               
+
+
+                
+                font-family: $Cormorant-Garamond;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+                
+                color: #FFFFFF;
+
+                
+            }
+
+            
+
+                @media screen and (max-width: 767px){
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            
+            }
+            
+
+
+    }
+
+
+
+
+
+.contactForm1{
+    h3{
+        @media screen and (mAX-width: 992px){
+            text-align: center;
+            
+        }
+        font-family: $Cormorant-Garamond;
+        font-style: normal;
+        font-weight: normal;
+        @include fluid-type($min_width, $max_width, 24px, 48px);
+        // font-size: 48px;
+        line-height: 62px;
+        /* identical to box height, or 129% */
+        padding:2rem 0rem;
+        letter-spacing: 1.5px;
+        
+        color: #000000;
+    }
+    p{
+        font-family:$open-sans;
+        font-style: normal;
+        font-weight: normal;
+        @include fluid-type($min_width, $max_width, 12px, 16px);
+        // font-size: 14px;
+        line-height: 23px;
+        /* or 164% */
+        @media screen and (mAX-width: 992px){
+            text-align: center;
+            
+        }
+        
+        color: #2C2C2C;
+        
+    }
+
+    .generalInquiry{
+        // border-right: 2px solid black;
+        
+      
+        .left-border{
+                @media screen and (min-width: 992px){
+                    border-right: 4px solid  #DADADA;
+                }
+                .form1{
+                    @media screen and (mAX-width: 992px){
+                        text-align: left;
+                        
+                    }
+                    .checkbox-column{
+                            padding-left: 3rem;
+                        }
+                }
+            
+                }
+
+        .heading{
+            font-family:$open-sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 15px;
+            /* identical to box height, or 287% */
+             @media screen and (mAX-width: 992px){
+            text-align: center;
+            
+        }
+            
+            color: #9C7545;
+            
+         } 
+         .nav-btn1{
+            background: linear-gradient(180deg, #9E7646 0%, #9C7545 48.44%, #9C7545 100%);
+            border: none;
+            padding: 10px 25px;
+            
+            
+            font-family: $Roboto;
+            font-style: normal;
+            font-weight: bold;
+            @include fluid-type($min_width, $max_width, 12px, 16spx);
+            // font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+        } 
+
+
+
+         .checkboxEntry{
+             li{
+                 text-decoration: none;
+                 list-style: none;
+                 color: #d17878;
+             }
+                h5{
+                    padding-top: 1rem;
+                    font-family: $Cormorant-Garamond;
+                    font-style: normal;
+                    font-weight: normal;
+                   @include fluid-type($min_width, $max_width, 14px, 18px);
+                    // font-size: 18px;
+                    line-height: 22px;
+                    /* identical to box height */
+                    @media screen and (mAX-width: 992px){
+                        text-align: center;
+                        
+                    }
+                    
+                    color: #000000;
+                }
+                 .contactEntry{
+                        .entryLabel{
+                            font-family: $open-sans;
+                            font-style: normal;
+                            font-weight: normal;
+                            @include fluid-type($min_width, $max_width, 13px, 16px);
+                            // font-size: 14px;
+                            line-height: 23px;
+                            /* identical to box height, or 164% */
+                            
+                            text-align: left;
+                            color: #000000;
+                            
+                            
+                        }
+
+                        .dataEntry:checked ~ .entryLabel {
+            
+                          font-weight: bold;
+                          color: #000000;
+                           background:rgba($color: #000000, $alpha: 0.01);
+                        }
+
+                       
+                        
+
+                        
+                        
+                         
+                    }
+                }
+    }    
+    .contactDisp{
+        .address{
+            text-decoration: none;
+            font-family:$open-sans;
+            font-style: normal;
+            font-weight: normal;
+            @include fluid-type($min_width, $max_width, 12px, 14px);
+            //font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 5px;
+            color: #2C2C2C;
+            @media screen and (mAX-width: 992px){
+                text-align: center;
+                
+            }
+        }
+    }
+     
+}  
+
+
+
+.disp-map{
+    #map{
+        width: 100%;
+              @media screen and (max-width: 992px){
+                         height: 300px;
+                    }
+              @media screen and (max-width: 768px){
+                        height: 200px;
+                   }
+               @media screen and (min-width: 992px){
+                          height: 412px;
+                    }
+    }
+   
+      
+}
