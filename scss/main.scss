@@ -479,11 +479,9 @@ $Roboto: 'Roboto', sans-serif;
                     border-right: 1px #474E57 solid;
                     @media screen and (max-width: 768px){
                         border-right: none;
-                       
+                        border-bottom: 1px #474E57 solid;
                     }
-                    @media screen and (max-width: 990px){
-                       
-                    }
+                   
                 }
 
                 &:nth-child(6){
@@ -674,4 +672,9 @@ $Roboto: 'Roboto', sans-serif;
 @import "industries";
 @import "contact";
 @import "insight";
-@import "careers"
+@import "careers";
+@import "about";
+@import "meet-team";
+@import "employee-details";
+@import "existing-members";
+@import "token-generator";
